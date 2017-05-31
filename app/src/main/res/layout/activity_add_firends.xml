@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/add_friends_constraintLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context="reoger.hut.chatinstant.view.AddFirendsActivity"
+	tools:layout_editor_absoluteX="0dp"
+	tools:layout_editor_absoluteY="81dp">
+
+	<EditText
+		android:id="@+id/add_friend_name"
+		android:layout_width="0dp"
+		android:layout_height="44dp"
+		android:layout_marginBottom="20dp"
+		android:layout_marginEnd="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_marginRight="8dp"
+		android:layout_marginStart="8dp"
+		android:layout_marginTop="16dp"
+		android:hint="请输入好友的用户名"
+		app:layout_constraintBottom_toTopOf="@+id/add_friend_nickname"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_constraintBottom_creator="1"
+		tools:layout_constraintLeft_creator="1"
+		tools:layout_constraintRight_creator="1"
+		tools:layout_constraintTop_creator="1" />
+	<Button
+		android:id="@+id/add_friends_but"
+		android:layout_width="0dp"
+		android:layout_height="48dp"
+		android:layout_marginTop="30dp"
+		android:layout_weight="1"
+		android:elevation="0dp"
+		android:text="搜索好友"
+		app:layout_constraintLeft_toLeftOf="@+id/add_friend_group"
+		app:layout_constraintRight_toRightOf="@+id/add_friend_group"
+		app:layout_constraintTop_toBottomOf="@+id/add_friend_group"
+		tools:layout_constraintLeft_creator="1"
+		tools:layout_constraintRight_creator="1"
+		tools:layout_constraintTop_creator="1" />
+	
+	<EditText
+	android:id="@+id/add_friend_nickname"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginEnd="8dp"
+	android:layout_marginLeft="8dp"
+	android:layout_marginRight="8dp"
+	android:layout_marginStart="8dp"
+	android:layout_marginTop="80dp"
+	android:ems="10"
+	android:hint="输入用户昵称"
+	android:inputType="text"
+	app:layout_constraintLeft_toLeftOf="parent"
+	app:layout_constraintRight_toRightOf="parent"
+	app:layout_constraintTop_toTopOf="parent"
+	tools:layout_constraintLeft_creator="1"
+	tools:layout_constraintRight_creator="1"
+	tools:layout_constraintTop_creator="1" /><EditText
+	android:id="@+id/add_friend_group"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="18dp"
+	android:ems="10"
+	android:hint="输入用户分组"
+	android:inputType="text"
+	app:layout_constraintLeft_toLeftOf="@+id/add_friend_nickname"
+	app:layout_constraintRight_toRightOf="@+id/add_friend_nickname"
+	app:layout_constraintTop_toBottomOf="@+id/add_friend_nickname"
+	tools:layout_constraintLeft_creator="1"
+	tools:layout_constraintRight_creator="1"
+	tools:layout_constraintTop_creator="1" />
+	
+	<Button
+		android:id="@+id/add_friend_search"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="搜索"
+		app:layout_constraintLeft_toLeftOf="@+id/add_friends_but"
+		app:layout_constraintRight_toRightOf="@+id/add_friends_but"
+		app:layout_constraintTop_toBottomOf="@+id/add_friends_but"
+		tools:layout_constraintLeft_creator="1"
+		tools:layout_constraintRight_creator="1"
+		tools:layout_constraintTop_creator="1" />
+	
+	
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <SwitchPreference
+	        android:defaultValue="true"
+	        android:key="encryption_switch"
+	        android:summary="消息加密"
+	        android:title="@string/pref_title_social_recommendations" />
+	<ListPreference
+		android:defaultValue="1"
+		android:entries="@array/pref_encryption_type"
+		android:entryValues="@array/pref_encryption_type_values"
+		android:key="encryption_type"
+		android:negativeButtonText="@null"
+		android:positiveButtonText="@null"
+		android:dependency="encryption_switch"
+		android:title="加密方式"
+		/>
+	<EditTextPreference
+		android:capitalize="characters"
+		android:defaultValue="@string/default_key"
+		android:inputType="textCapWords"
+		android:key="encryption_key"
+		android:maxLines="1"
+		android:dependency="encryption_switch"
+		android:selectAllOnFocus="true"
+		android:singleLine="true"
+		android:title="@string/pre_encryption_key"
+		/>
+</PreferenceScreen>
